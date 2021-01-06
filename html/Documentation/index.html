@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Documentation | AhaMag HTML</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700%7CRoboto:400,700' rel='stylesheet'>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body data-spy="scroll" data-offset="60" data-target=".navbar" class="relative">
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">Loading...</div>
+  </div>
+
+  <div class="main-wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul class="local-scroll nav navbar-nav">
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#navigation">Basic Navigation</a></li>
+        <li><a href="#credits">Credits</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu Icon -->
+    <button class="menu-icon" id="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu Icon Close -->
+    <button class="menu-icon-close" id="menu-icon-close">
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Content -->
+    <div class="content-wrapper oh">
+
+      <header>
+        <h1>AhaMag HTML Documentation</h1>
+        <p>Thank you for purchasing our template. If you have any questions regarding our product feel free to visit our <a href="http://deothemes.com/support/forums" target="_blank">support forum</a></p>
+      </header>
+
+      <hr>
+
+      <h1 class="section-title" id="getting-started">Getting Started</h1>
+      <p>Unzip files from archive and you will find following folders and files.</p>
+      <ul>
+        <li><strong>/css</strong> - folder with css files</li>
+        <li><strong>/fonts</strong> - folder with icon fonts</li>
+        <li><strong>/img</strong> - folder with all images</li>
+        <li><strong>/js</strong> - folder with jQuery script files</li>
+        <li><strong>contact.php</strong> - file for contact form</li>
+      </ul>
+      <p class="note">Note: Contact form will not work offline. You must upload your website on a server with support of PHP and PHP mail() function.</p>
+
+
+      <h1 class="section-title" id="navigation">Basic Navigation</h1>
+      <p>Basic navigation structure consist of the following code.</p>
+      <pre><code class="language-markup">
+      &lt;header class="nav">
+
+        &lt;div class="nav__holder nav--sticky">
+          &lt;div class="container relative">
+            
+            &lt;div class="flex-parent">
+
+              &lt;!-- Side Menu Button -->
+              &lt;button class="nav-icon-toggle" id="nav-icon-toggle" aria-label="Open side menu">
+                &lt;span class="nav-icon-toggle__box">
+                  &lt;span class="nav-icon-toggle__inner">&lt;/span>
+                &lt;/span>
+              &lt;/button>
+
+              &lt;!-- Mobile logo -->
+              &lt;a href="index.html" class="logo logo--mobile d-lg-none">
+                &lt;img class="logo__img" src="img/logo_mobile.png" srcset="img/logo_mobile.png 1x, img/logo_mobile@2x.png 2x" alt="logo">
+              &lt;/a>
+
+              &lt;!-- Nav Wrap -->
+              &lt;nav class="flex-child nav__wrap d-none d-lg-block">
+                &lt;ul class="nav__menu">
+                  
+                  &lt;li class="nav__dropdown">
+                    ...          
+                  &lt;/li>
+
+                &lt;/ul>
+              &lt;/nav>
+
+              &lt;!-- Nav Right -->
+              &lt;div class="nav__right nav--align-right d-lg-flex">
+                ...
+              &lt;/div>
+
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+      &lt;/header>
+
+      </code></pre>
+
+
+      <!-- Colors -->
+      <h1 class="section-title" id="colors">Changing Colors</h1>
+      <p>You can change the main color of theme using Sass. The process described here - <a href="https://deothemes.com/blog/article/how-to-use-sass-in-our-templates.html/" target="_blank">link</a></p>
+
+
+      <h1 class="section-title" id="credits">Credits</h1>
+      <ul>
+        <li><a href="http://jquery.com/">jQuery</a></li>
+        <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+        <li><a href="https://github.com/gdsmith/jquery.easing">Easing</a></li>
+        <li><a href="https://github.com/aFarkas/lazysizes">Lazyload</a></li>
+        <li><a href="http://owlgraphic.com/owlcarousel/">Owl carousel</a></li>
+        <li><a href="https://github.com/jasonmayes/Twitter-Post-Fetcher">Twitter Fetcher</a></li>
+        <li><a href="https://modernizr.com/">Modernizr</a></li>
+      </ul>
+
+
+      <h1 class="section-title" id="support">Support</h1>
+      <p>If you have any question feel free to visit our <a href="http://deothemes.com/support/forums" target="_blank">Support Forum</a></p>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="copyright">
+          <span>
+            &copy; 2018 AhaMag | Made by <a href="http://deothemes.com">DeoThemes</a>
+          </span>
+        </div>
+      </footer> <!-- end footer -->
+
+
+    </div> <!-- end content wrapper -->
+  </div> <!-- end main wrapper -->
+
+  <!-- jQuery Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>

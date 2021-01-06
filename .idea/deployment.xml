@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="阿里云-py8" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="阿里云-py8">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/summer/python_test/Mini-Web" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
