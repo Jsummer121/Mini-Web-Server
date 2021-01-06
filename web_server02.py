@@ -4,7 +4,7 @@ import socket
 import multiprocessing
 import time
 
-from web import my_web
+from dynamic import my_web
 
 
 class WSGIServer:
@@ -83,7 +83,7 @@ class WSGIServer:
 			
 	def set_response_headers(self, status, headers):
 		"""这个方法，会在 web框架中被默认调用"""
-		response_header_default = [("Data", time.ctime()), ("Server", "ItCast-python mini web server")]
+		response_header_default = [("Data", time.ctime()), ("Server", "ItCast-python mini dynamic server")]
 		
 		# 将状态码/相应头信息存储起来
 		# [字符串, [xxxxx, xxx2]]

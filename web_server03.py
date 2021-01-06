@@ -57,8 +57,8 @@ class WSGIServer(object):
 			for i, line in enumerate(request_lines):
 				print(i, line)
 			
-			# 提取请求的文件(index.html)
-			# GET /a/b/c/d/e/index.html HTTP/1.1
+			# 提取请求的文件(index.static)
+			# GET /a/b/c/d/e/index.static HTTP/1.1
 			ret = re.match(r"([^/]*)([^ ]+)", request_lines[0])
 			if ret:
 				print("正则提取数据:", ret.group(1))
@@ -109,7 +109,7 @@ class WSGIServer(object):
 	
 	def set_response_headers(self, status, headers):
 		"""这个方法，会在 web框架中被默认调用"""
-		response_header_default = [("Data", time.ctime()), ("Server", "ItCast-python mini web server")]
+		response_header_default = [("Data", time.ctime()), ("Server", "ItCast-python mini dynamic server")]
 		
 		# 将状态码/相应头信息存储起来
 		# [字符串, [xxxxx, xxx2]]
@@ -119,7 +119,7 @@ class WSGIServer(object):
 # 设置静态资源访问的路径
 g_static_document_root = "./html"
 # 设置动态资源访问的路径
-g_dynamic_document_root = "./web"
+g_dynamic_document_root = "./dynamic"
 
 
 def main():

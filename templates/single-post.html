@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Aha Magazine | Single Post Quote</title>
+  <title>Aha Magazine | Single Post</title>
 
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -12,18 +12,18 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet'>
 
   <!-- Css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/font-icons.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../static/css/font-icons.css" />
+  <link rel="stylesheet" href="../static/css/style.css" />
 
   <!-- Favicons -->
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="shortcut icon" href="../static/img/favicon.ico">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../static/img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../static/img/apple-touch-icon-114x114.png">
 
   <!-- Lazyload -->
-  <script src="js/lazysizes.min.js"></script>
+  <script src="../static/js/lazysizes.min.js"></script>
 
 </head>
 
@@ -155,7 +155,7 @@
 
             <!-- Mobile logo -->
             <a href="index.html" class="logo logo--mobile d-lg-none">
-              <img class="logo__img" src="img/logo_mobile.png" srcset="img/logo_mobile.png 1x, img/logo_mobile@2x.png 2x" alt="logo">
+              <img class="logo__img" src="../static/img/logo_mobile.png" srcset="../static/img/logo_mobile.png 1x, img/logo_mobile@2x.png 2x" alt="logo">
             </a>
 
             <!-- Nav-wrap -->
@@ -256,13 +256,13 @@
           
           <!-- Logo -->
           <a href="index.html" class="logo d-none d-lg-block">
-            <img class="logo__img" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
+            <img class="logo__img" src="../static/img/logo.png" srcset="../static/img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
           </a>
 
           <!-- Ad Banner 728 -->
           <div class="text-center">
             <a href="#">
-              <img src="img/blog/placeholder_leaderboard.jpg" alt="">
+              <img src="../static/img/blog/placeholder_leaderboard.jpg" alt="">
             </a>
           </div>
 
@@ -291,15 +291,14 @@
             </li>
           </ul>
 
-          <!-- quote post -->
+          <!-- standard post -->
           <article class="entry">
             
             <div class="single-post__entry-header entry__header">
               <a href="#" class="entry__meta-category">World</a>
-              
-              <blockquote><p>“To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.”</p>
-              <cite>Ralph Waldo Emerson</cite>
-              </blockquote>
+              <h1 class="single-post__entry-title">
+                Myanmar little monk reading book outside monastery
+              </h1>
 
               <ul class="entry__meta">
                 <li class="entry__meta-author">
@@ -315,6 +314,10 @@
                   <a href="#">115</a>
                 </li>
               </ul>
+            </div>
+
+            <div class="entry__img-holder">
+              <img src="../static/img/blog/single_post_featured_img.jpg" alt="" class="entry__img">
             </div>
 
             <!-- Share -->
@@ -349,7 +352,7 @@
               <p>Music can help you get into a “flow state” -- losing yourself in the task at hand. Even repetitive tasks or mundane assignments seem more bearable, or even fun, when your favorite tunes are in your ears. Plus, your eyes won’t be so prone to checking the time. <a href="#">Check out these</a> and more reasons to bring your music to work in this Zing Instruments infographic below. A great piece of music is an instant mood lifter. Plenty of scientific evidence backs this up - we`re happier bunnies when listening to music.</p>
 
               <figure>
-                <img src="img/blog/single_post_img.jpg" alt="">
+                <img data-src="img/blog/single_post_img.jpg" src="../static/img/empty.png" alt="" class="lazyload">
                 <figcaption>The best WordPress theme</figcaption>
               </figure>              
 
@@ -437,7 +440,7 @@
               <h5 class="uppercase">about author</h5>
             </div>
             <div class="entry-author clearfix">
-              <img alt="" src="img/blog/author_large.jpg" class="avatar">
+              <img alt="" data-src="img/blog/author_large.jpg" src="../static/img/empty.png" class="avatar lazyload">
               <div class="entry-author__info">
                 <h6 class="entry-author__name">
                   <a href="#">John Carpet</a>
@@ -477,7 +480,7 @@
                     <div class="entry__img-holder">
                       <a href="single-post.html">
                         <div class="thumb-container thumb-75">
-                          <img data-src="img/blog/carousel_img_1.jpg" src="img/blog/carousel_img_1.jpg" class="entry__img lazyload" alt="">
+                          <img data-src="img/blog/carousel_img_1.jpg" src="../static/img/empty.png" class="entry__img lazyload" alt="">
                         </div>
                       </a>
                     </div>
@@ -496,7 +499,7 @@
                     <div class="entry__img-holder">
                       <a href="single-post.html">
                         <div class="thumb-container thumb-75">
-                          <img data-src="img/blog/carousel_img_2.jpg" src="img/blog/carousel_img_2.jpg" class="entry__img lazyload" alt="">
+                          <img data-src="img/blog/carousel_img_2.jpg" src="../static/img/empty.png" class="entry__img lazyload" alt="">
                         </div>
                       </a>
                     </div>
@@ -515,7 +518,7 @@
                     <div class="entry__img-holder">
                       <a href="single-post.html">
                         <div class="thumb-container thumb-75">
-                          <img data-src="img/blog/carousel_img_3.jpg" src="img/blog/carousel_img_3.jpg" class="entry__img lazyload" alt="">
+                          <img data-src="img/blog/carousel_img_3.jpg" src="../static/img/empty.png" class="entry__img lazyload" alt="">
                         </div>
                       </a>
                     </div>
@@ -532,7 +535,7 @@
               </div>
             </div> <!-- end related posts -->                
 
-          </article> <!-- end quote post -->
+          </article> <!-- end standard post -->
 
 
           <!-- Comments -->
@@ -544,7 +547,7 @@
               <li class="comment">  
                 <div class="comment-body">
                   <div class="comment-avatar">
-                    <img alt="" src="img/blog/comment_1.jpg">
+                    <img alt="" src="../static/img/blog/comment_1.jpg">
                   </div>
                   <div class="comment-text">
                     <h6 class="comment-author">Joeby Ragpa</h6>
@@ -560,7 +563,7 @@
                   <li class="comment">
                     <div class="comment-body">
                       <div class="comment-avatar">
-                        <img alt="" src="img/blog/comment_2.jpg">
+                        <img alt="" src="../static/img/blog/comment_2.jpg">
                       </div>
                       <div class="comment-text">
                         <h6 class="comment-author">Alexander Samokhin</h6>
@@ -579,7 +582,7 @@
               <li>
                 <div class="comment-body">
                   <div class="comment-avatar">
-                    <img alt="" src="img/blog/comment_3.jpg">
+                    <img alt="" src="../static/img/blog/comment_3.jpg">
                   </div>
                   <div class="comment-text">
                     <h6 class="comment-author">Chris Root</h6>
@@ -719,7 +722,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_1.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_1.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -741,7 +744,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_2.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_2.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -763,7 +766,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_3.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_3.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -785,7 +788,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_4.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_4.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -812,7 +815,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_2.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_2.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -834,7 +837,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_1.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_1.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -856,7 +859,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_3.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_3.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -878,7 +881,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_4.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_4.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -905,7 +908,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_3.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_3.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -927,7 +930,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_1.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_1.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -949,7 +952,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_2.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_2.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -971,7 +974,7 @@
                         <div class="post-list-small__img-holder">
                           <div class="thumb-container thumb-75">
                             <a href="single-post.html">
-                              <img data-src="img/blog/popular_post_4.jpg" src="img/empty.png" alt="" class=" lazyload">
+                              <img data-src="img/blog/popular_post_4.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                             </a>
                           </div>
                         </div>
@@ -998,7 +1001,7 @@
           <!-- Widget Ad 300 -->
           <div class="widget widget_media_image">
             <a href="#">
-              <img src="img/blog/placeholder_300.jpg" alt="">
+              <img src="../static/img/blog/placeholder_300.jpg" alt="">
             </a>
           </div> <!-- end widget ad 300 -->          
 
@@ -1039,16 +1042,16 @@
           <div class="widget widget-gallery-sm">
             <ul class="widget-gallery-sm__list">
               <li class="widget-gallery-sm__item">
-                <a href="#"><img src="img/blog/placeholder_125.jpg" alt=""></a>
+                <a href="#"><img src="../static/img/blog/placeholder_125.jpg" alt=""></a>
               </li>
               <li class="widget-gallery-sm__item">
-                <a href="#"><img src="img/blog/placeholder_125.jpg" alt=""></a>
+                <a href="#"><img src="../static/img/blog/placeholder_125.jpg" alt=""></a>
               </li>
               <li class="widget-gallery-sm__item">
-                <a href="#"><img src="img/blog/placeholder_125.jpg" alt=""></a>
+                <a href="#"><img src="../static/img/blog/placeholder_125.jpg" alt=""></a>
               </li>
               <li class="widget-gallery-sm__item">
-                <a href="#"><img src="img/blog/placeholder_125.jpg" alt=""></a>
+                <a href="#"><img src="../static/img/blog/placeholder_125.jpg" alt=""></a>
               </li>
             </ul>
           </div> <!-- end widget ad 300 -->
@@ -1062,7 +1065,7 @@
                 <div class="entry__img-holder mb-0">
                   <a href="single-post.html">
                     <div class="thumb-bg-holder">
-                      <img data-src="img/blog/featured_post_img_1.jpg" src="img/blog/featured_post_img_1.jpg" class="entry__img owl-lazy" alt="">
+                      <img data-src="img/blog/featured_post_img_1.jpg" src="../static/img/blog/featured_post_img_1.jpg" class="entry__img owl-lazy" alt="">
                       <div class="bottom-gradient"></div>
                     </div>
                   </a>
@@ -1079,7 +1082,7 @@
                 <div class="entry__img-holder mb-0">
                   <a href="single-post.html">
                     <div class="thumb-bg-holder">
-                      <img data-src="img/blog/featured_post_img_2.jpg" src="img/blog/featured_post_img_2.jpg" class="entry__img owl-lazy" alt="">
+                      <img data-src="img/blog/featured_post_img_2.jpg" src="../static/img/blog/featured_post_img_2.jpg" class="entry__img owl-lazy" alt="">
                       <div class="bottom-gradient"></div>
                     </div>
                   </a>
@@ -1105,7 +1108,7 @@
                   <div class="post-list-small__img-holder">
                     <div class="thumb-container thumb-75">
                       <a href="single-post.html">
-                        <img data-src="img/blog/review_post_1.jpg" src="img/blog/review_post_1.jpg" alt="" class=" lazyload">
+                        <img data-src="img/blog/review_post_1.jpg" src="../static/img/blog/review_post_1.jpg" alt="" class=" lazyload">
                       </a>
                     </div>
                   </div>
@@ -1130,7 +1133,7 @@
                   <div class="post-list-small__img-holder">
                     <div class="thumb-container thumb-75">
                       <a href="single-post.html">
-                        <img data-src="img/blog/review_post_2.jpg" src="img/empty.png" alt="" class=" lazyload">
+                        <img data-src="img/blog/review_post_2.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                       </a>
                     </div>
                   </div>
@@ -1155,7 +1158,7 @@
                   <div class="post-list-small__img-holder">
                     <div class="thumb-container thumb-75">
                       <a href="single-post.html">
-                        <img data-src="img/blog/review_post_3.jpg" src="img/empty.png" alt="" class=" lazyload">
+                        <img data-src="img/blog/review_post_3.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                       </a>
                     </div>
                   </div>
@@ -1180,7 +1183,7 @@
                   <div class="post-list-small__img-holder">
                     <div class="thumb-container thumb-75">
                       <a href="single-post.html">
-                        <img data-src="img/blog/review_post_4.jpg" src="img/empty.png" alt="" class=" lazyload">
+                        <img data-src="img/blog/review_post_4.jpg" src="../static/img/empty.png" alt="" class=" lazyload">
                       </a>
                     </div>
                   </div>
@@ -1232,7 +1235,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="widget">
                 <a href="index.html">
-                  <img src="img/logo_mobile.png" srcset="img/logo_mobile.png 1x, img/logo_mobile@2x.png 2x" class="logo__img" alt="">
+                  <img src="../static/img/logo_mobile.png" srcset="../static/img/logo_mobile.png 1x, img/logo_mobile@2x.png 2x" class="logo__img" alt="">
                 </a>
                 <p class="mt-20">We bring you the best Premium WordPress Themes. Deliver smart websites faster with this amazing theme. We care about our buyers.</p>
               </div>
@@ -1246,7 +1249,7 @@
                     <div class="post-list-small__img-holder">
                       <div class="thumb-container thumb-75">
                         <a href="single-post.html">
-                          <img data-src="img/blog/popular_post_1.jpg" src="img/empty.png" alt="" class="lazyload">
+                          <img data-src="img/blog/popular_post_1.jpg" src="../static/img/empty.png" alt="" class="lazyload">
                         </a>
                       </div>
                     </div>
@@ -1268,7 +1271,7 @@
                     <div class="post-list-small__img-holder">
                       <div class="thumb-container thumb-75">
                         <a href="single-post.html">
-                          <img data-src="img/blog/popular_post_2.jpg" src="img/empty.png" alt="" class="lazyload">
+                          <img data-src="img/blog/popular_post_2.jpg" src="../static/img/empty.png" alt="" class="lazyload">
                         </a>
                       </div>
                     </div>
@@ -1363,14 +1366,14 @@
 
   
   <!-- jQuery Scripts -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/easing.min.js"></script>
-  <script src="js/owl-carousel.min.js"></script>
-  <script src="js/twitterFetcher_min.js"></script>
-  <script src="js/modernizr.min.js"></script>
-  <script src="js/jquery.appear.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/easing.min.js"></script>
+  <script src="../static/js/owl-carousel.min.js"></script>
+  <script src="../static/js/twitterFetcher_min.js"></script>
+  <script src="../static/js/modernizr.min.js"></script>
+  <script src="../static/js/jquery.appear.min.js"></script>
+  <script src="../static/js/scripts.js"></script>
 
 </body>
 </html>

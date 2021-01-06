@@ -2,7 +2,7 @@
 import re
 import socket
 import multiprocessing
-import web
+import dynamic
 
 
 class WSGIServer:
