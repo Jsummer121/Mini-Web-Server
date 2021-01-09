@@ -15,7 +15,7 @@ def route(url):
 	return set_func
 
 
-@route("/index.py")
+@route("/index.html")
 def index():
 	with open("./templates/index.html") as f:
 		content = f.read()
@@ -27,7 +27,7 @@ def index():
 	return content
 
 
-@route("/center.py")
+@route("/center.html")
 def center():
 	with open("./templates/center.html") as f:
 		content = f.read()
@@ -43,7 +43,7 @@ def application(env, start_response):
 	start_response('200 OK', [('Content-Type', 'text/html;charset=utf-8')])
 	
 	file_name = env['PATH_INFO']
-	# file_name = "/index.py"
+	# file_name = "/index.html"
 	
 	try:
 		return g_url_route[file_name]()
