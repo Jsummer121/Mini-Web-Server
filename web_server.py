@@ -90,9 +90,6 @@ class WSGIServer(object):
 			response = header + body
 			# 发送response给浏览器
 			new_socket.send(response.encode("utf-8"))
-		
-		# 关闭套接
-		new_socket.close()
 	
 	def set_response_header(self, status, headers):
 		self.status = status
