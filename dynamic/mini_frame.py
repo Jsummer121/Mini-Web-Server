@@ -1,5 +1,6 @@
 import re
 import urllib.parse
+import logging
 from pymysql import connect
 
 """
@@ -281,8 +282,15 @@ def save_update_page(ret):
 
 def application(env, start_response):
     start_response('200 OK', [('Content-Type', 'text/html;charset=utf-8')])
-
+    
+    # 配置日志
+    logging.basicConfig(level=logging.INFO,
+                        filename='./log.txt',
+                        filemode='w',
+                        format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')
+    
     file_name = env['PATH_INFO']
+    logging.info("访问url为：%s" %file_name)
     # file_name = "/index.py"
     try:
         # func = URL_FUNC_DICT[file_name]
@@ -298,7 +306,9 @@ def application(env, start_response):
             if ret:
                 return func(ret)
         else:
+            logging.warning("并没有该所对应的url：%s"%file_name)
             return "请求的url(%s)没有对应的函数" % file_name
 
     except Exception as ret:
+        logging.warning("产生异常")
         return "产生了异常：%s" % str(ret)

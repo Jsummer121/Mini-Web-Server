@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="99802584-889c-4214-95bf-7dc60cc71538" name="Default Changelist" comment="第1.2版服务器：动态服务器（在1.1的基础上进行代码整理和修改）">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic/mini_frame.py" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic/mini_frame.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +233,7 @@
       <workItem from="1609990460564" duration="1147000" />
       <workItem from="1609992049736" duration="695000" />
       <workItem from="1610091739818" duration="12783000" />
-      <workItem from="1610268827843" duration="5080000" />
+      <workItem from="1610268827843" duration="7104000" />
     </task>
     <task id="LOCAL-00001" summary="第一版：静态服务器">
       <created>1609772544794</created>
@@ -354,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610273422923</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="添加html返回值的utf8编码（这个错误会导致页面出现乱码）">
+      <created>1610274295697</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610274295697</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +393,8 @@
     <MESSAGE value="版本1.3 实现框架和服务器解耦添加相应的配置功能" />
     <MESSAGE value="添加路由功能" />
     <MESSAGE value="实现路由功能并且与mysql交互" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现路由功能并且与mysql交互" />
+    <MESSAGE value="添加html返回值的utf8编码（这个错误会导致页面出现乱码）" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加html返回值的utf8编码（这个错误会导致页面出现乱码）" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mini_Web_Server$more_Process_web_server.coverage" NAME="more_Process_web_server Coverage Results" MODIFIED="1609919362624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
