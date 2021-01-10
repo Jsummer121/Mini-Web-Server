@@ -83,7 +83,7 @@ class WSGIServer(object):
 			
 			for temp in self.headers:
 				header += "%s:%s\r\n" % (temp[0], temp[1])
-			header += "Content-Length: %d\r\n" % (len(body))
+			header += "Content-Length: %d\r\n" % (len(body.encode("utf-8")))
 			
 			header += "\r\n"
 			
