@@ -286,7 +286,7 @@ def application(env, start_response):
     # 配置日志
     logging.basicConfig(level=logging.INFO,
                         filename='./log.txt',
-                        filemode='w',
+                        filemode='a',
                         format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')
     
     file_name = env['PATH_INFO']
